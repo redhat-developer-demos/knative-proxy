@@ -44,7 +44,7 @@ modifyImage = function(req, res){
     const url = process.env.PROXY_URL ||
           'http://192.168.99.100:31380/overlayImage';
     const headerValue = process.env.PROXY_HOST ||
-          'overlayimage.knativetutorial.192.168.99.100.nip.io';
+          'overlayimage.knativetutorial.example.com';
     
     nodeFetch(url, {
         timeout: 90000,
