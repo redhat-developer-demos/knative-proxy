@@ -54,14 +54,7 @@ modifyImage = function(req, res){
             'Accept': 'application/json',
             'Host': headerValue
         },
-        body: JSON.stringify({
-            imageData: req.body.imageData,
-            imageType: req.body.imageType,
-            greeting: req.body.greeting,
-            dateFormatString: req.body.dateFormatString,
-            language: req.body.language,
-            location: req.body.location
-        }) 
+        body: JSON.stringify(req.body)
     })
 
     // Handle the requests via promises here
@@ -69,8 +62,8 @@ modifyImage = function(req, res){
     .then((responseJson) => {
         res.set({'Access-Control-Allow-Origin': req.header('Origin'),
                  'Cache-Control': 'no-cache, no-store, must-revalidate'})
-            .status(200)
-            .json(responseJson);
+            .json(responseJson)
+            .status(200);
     });
 };
 
