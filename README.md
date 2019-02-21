@@ -2,7 +2,7 @@
 
 A node.js proxy for invoking Knative services on behalf of XHRs. This code exists because Knative by default requires a certain value in the HOST header. That value by default is servicename.namespace.example.com. Unfortunately, XHRs aren't allowed to set the HOST header value, so they can't access Knative services.
 
-This repo is part of an interactive Knative and serverless tutorial, the [Compile Driver](https://developers.redhat.com/compile-driver/), a ride at an imaginary theme park called Coderland.
+This repo is part of an interactive Knative and serverless tutorial, the [Compile Driver](https://developers.redhat.com/coderland/serverless/), a ride at an imaginary theme park called Coderland.
 
 ## Environment variables
 
