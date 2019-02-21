@@ -1,10 +1,8 @@
 # knative-proxy
 
-A node.js proxy for invoking Knative services on behalf of XHRs.
-This code exists because Knative by default requires a certain value
-in the HOST header. That value by default is
-servicename.namespace.example.com. Unfortunately, XHRs aren't allowed
-to set the HOST header value, so they can't access Knative services.
+A node.js proxy for invoking Knative services on behalf of XHRs. This code exists because Knative by default requires a certain value in the HOST header. That value by default is servicename.namespace.example.com. Unfortunately, XHRs aren't allowed to set the HOST header value, so they can't access Knative services.
+
+This repo is part of an interactive Knative and serverless tutorial, the [Compile Driver](https://developers.redhat.com/compile-driver/), a ride at an imaginary theme park called Coderland.
 
 ## Environment variables
 
@@ -16,3 +14,26 @@ npm start:
 `http://192.168.99.100:31380/overlayImage`.
 1. `PROXY_HOST` - The value for the HOST header. Default is
 `overlayimage.knativetutorial.example.com.nip.io`.
+
+## IMPORTANT LINKS
+
+:notebook: [Knative Tutorial](https://redhat-developer-demos.github.io/knative-tutorial/knative-tutorial/dev/index.html)
+
+:gift: [GitHub repo - Image overlay](https://github.com/redhat-developer-demos/image-overlay)
+
+:gift: [GitHub repo - Photo store](https://github.com/redhat-developer-demos/coderland-photo-store)
+
+:gift: [GitHub repo - Knative proxy](https://github.com/redhat-developer-demos/knative-proxy)
+
+:package: [Docker image](https://cloud.docker.com/repository/docker/dougtidwell/imageoverlay)
+
+:clapper: [VIDEO: Serverless Computing Tutorial - Introduction (Part 1)](https://youtu.be/R8PGrhfVWTc)
+
+:clapper: [VIDEO: Serverless Computing Tutorial - The Service (Part 2)](https://youtu.be/M_Xse7vjkvE)
+
+:clapper: [VIDEO: Serverless Computing Tutorial - Deploying to Knative (Part 3)](https://youtu.be/AR4fqwFLn9I)
+
+
+***
+
+Coderland :roller_coaster::rocket::ferris_wheel: is a place for learning, brought to you by the [Red Hat Developer](https://developers.redhat.com) program.
